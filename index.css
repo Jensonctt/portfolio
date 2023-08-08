@@ -1,0 +1,250 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    /* overflow-x  is hidden */  
+}
+.container{
+    width: 100%;
+    height: 100vh; /* vh =19.2px */
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+.navbar{
+    width: 85%;
+    display: flex; /* side by side */
+    justify-content: space-between; /* creating space between 2 tags */
+    margin-left: 7%;
+    align-items: center;
+}
+.logo{
+    width: 130px;
+}
+.listitems{
+    display: inline-block; /* to keep in a line */
+    margin: 10px 20px;/* top+bottom & left+rignt */
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+/* selectors:pseudo_class(property:value;) */
+.links:hover{
+    color:red
+}
+.title{
+    margin-left: 5%;
+    margin-top: 5%;
+    
+}
+.title_h1{
+    margin-left: 30px;    
+}
+.title_p{
+    font-size: 20px;
+    margin-left: 30px;
+}
+#name{
+    color: rgb(237, 4, 4);
+}
+.download{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 8px;
+    border-style: hidden;
+    box-shadow: 1px 4px 4px 1px gray;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.images{
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    bottom: 0px;
+    right: 30px;
+}
+.images img{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);/* to avoid the scroll  */
+    transition: bottom 1s, left 1s; /* to go smoothly */
+}
+.images:hover #shape{
+    bottom: 70px;
+
+}
+.images:hover #girl{
+    left:40%
+}
+#about{
+    margin: 29% 8% 0px 8%;
+}
+.heading{
+    text-align: center; /* to bring the property into centre */
+}
+.heading h2{
+    font-size: 30px;
+}
+.heading span{
+    font-size: 20px;
+    color: green;
+}
+
+.about_content{
+    display: grid; /* to display in grid(can also use flex) */
+    grid-template-columns: repeat(2,1fr);/* 1fr=255px */
+    margin-top: 30px;
+    gap: 2rem; /* 1rem = 16px */
+
+}
+.about_details{
+    font-size: 18px;
+    text-align: justify;
+}
+.information{
+    margin-top: 2rem;
+}
+.info-box{
+    margin-bottom: 1rem;
+}
+.about-img img{
+    width: 80%;
+}
+.info-box span{
+    margin-left: 1rem;
+}
+#Skills{
+    margin: 8% 8% 0px 8%;
+}
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.skill-Images img{
+    width: 100%;
+    padding-left: 4rem;
+}
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.base-bar{
+    width: 100%;
+    height: 0.5rem ;
+    background-color: black;
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 0px;
+}
+.html_bar{
+    background-color: orange;
+    width: 95%;
+}
+.css_bar{
+    background-color: green;
+    width: 95%;
+}
+.js_bar{
+    background-color: brown;
+    width: 89%;
+}
+.react_bar{
+    background-color: yellow;
+    width: 85%;
+}
+.media_links{
+    margin-top: 3rem;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+   
+    
+}
+.link_icons, .gototop{
+        margin-left: 2rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;           
+    }
+    
+
+.link_icons:hover {
+    color: rgb(15, 37, 180);
+    background-image: linear-gradient(to bottom right,yellow,red,yellow)
+}
+.link_icons:hover i{
+    color: white;
+    animation: shake 0.75s infinite;
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(360deg);
+    }
+}
+
+.git:hover{
+    color: gray;
+
+}
+.twt:hover{
+    color: rgb(8, 128, 249);
+
+}
+.wthsp:hover{
+    color: rgb(38, 255, 0);
+}
+.ig:hover{
+    color: rgb(255, 0, 0);
+}
+.fb:hover{
+    color: blue;
+
+}
+.copyrights{
+    margin-bottom: 20%;
+}
+.copytext{
+    margin-top: 2.5%;
+    text-align: center;
+    font-size: 20px;
+}
+.gototop{
+    margin-left: 95%;
+    text-decoration:none;
+    background-image: linear-gradient(to bottom right,yellow,red,yellow)
+}
+.gototop{
+    color: white;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+.gototop{
+    margin-left: 500px;
+}
+
